@@ -1,3 +1,59 @@
 body {
     background-color: #ffe57f;
+    background-image: url("../images/floralpattern.jpg")
+}
+
+h3 {
+  padding-top: 0.5cm;
+  padding-bottom: 0cm;
+}
+
+h5 {
+  padding-left: 0.5cm;
+}
+
+ul {
+  padding-top: 0cm;
+}
+
+.center{
+  margin: auto;
+  text-align: center;
+}
+
+.centerP {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  font-size: medium;
+}
+
+.aboutList {
+  padding-left: 1cm;
+}
+
+.homeButton{
+  margin: auto;
+  text-align: center;
+}
+
+
+#nameHeader {
+  /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 4s infinite;
+}
+
+#soccerImage {
+  width:720px;
+  height:450px;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}
 }
