@@ -48,6 +48,10 @@ ul {
   height:450px;
 }
 
+#lol {
+    background-image: url("https://sousheel.github.io/images/floralpattern.jpg")
+    -webkit-animation: rainbow 4s infinite;
+}
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes rainbow{
