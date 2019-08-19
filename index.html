@@ -7,16 +7,37 @@
     <head>
       <title>Sousheel Vunnam</title>
       <meta charset="utf-8"/>
-      <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+      <link rel="stylesheet" type="text/css" href="styles/index_styles.css"/>
       <!-- <script src="soundcloud.js"></script> -->
       <!-- Make a header and footer!!! -->
+      <script>
+      window.onload = function() {
+        var context = new AudioContext();
+      }
+      </script>
     </head>
     <body>
-      <h2 class="city">
+      <!-- <h2 class="city"> -->
       <div class="center">
-        <h1 id="nameHeader">Sousheel Vunnam</h1>
-        <img src="images/sitePic.jpg" alt="My pretty face">
+        <div id=header>
+          <img class="nyan" src="images/nyan.gif"  />
+          <h1 id="nameHeader">Sousheel Vunnam</h1>
+          <img class="nyan" src="images/nyanreverse.gif" />
+        </div>
       </div>
+      <br />
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+      <div class="center">
+        <img id="face" src="images/whodatboii.png" alt="My pretty face">
+      </div>
+
 
       <br/>
       <p class="centerP">
@@ -39,5 +60,10 @@
       </div>
       <!-- </ul> -->
 
+      <!-- <img id="lol" src="https://media1.tenor.com/images/bb84e2c25c4dce5df2444fccb4039836/tenor.gif?itemid=7388663" alt="soccer boi"> -->
+      <br/>
+      <!-- <p class="centerP">FUCK nostalgia... we vintage babayyyy</p> -->
+      <iframe src="music/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+      <audio autoplay loop src="music/everything_explodes.mp3"></audio>
     </body>
 </html>
