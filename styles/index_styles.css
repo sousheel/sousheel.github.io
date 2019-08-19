@@ -5,7 +5,7 @@
 
 html {
   font-family: slkscr;
-  background: url(../images/moonBack.gif) no-repeat center center fixed;
+  background: url(../images/moonBack.gif) center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,7 +23,7 @@ h1{
 }
 
 p {
-  -webkit-animation: rainbow 8s infinite;
+  -webkit-animation: rainbow 4s infinite;
 }
 
 h3 {
