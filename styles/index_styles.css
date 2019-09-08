@@ -96,6 +96,11 @@ ul {
   opacity: .8;
 }
 
+#construction {
+  width: 5%;
+  opacity: .5;
+}
+
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes rainbow{
