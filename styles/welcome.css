@@ -110,31 +110,3 @@ ul {
 	80%{color: blue;}
 	100%{color: orange;}
 }
-
-
-#spinner {
-  text-align: center;
-  animation-name: spin, depth;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-  font-size: 50%;
-}
-@keyframes spin {
-  from { transform: rotateY(0deg); }
-  to { transform: rotateY(-360deg); }
-}
-@keyframes depth {
-  0% { text-shadow: 0 0 red; }
-  25% { text-shadow: 1px 0 yellow, 2px 0 yellow, 3px 0 yellow, 4px 0 yellow, 5px 0 yellow; }
-  50% { text-shadow: 0 0 green; }
-  75% { text-shadow: -1px 0 blue, -2px 0 blue, -3px 0 blue, -4px 0 blue, -5px 0 blue; }
-  100% { text-shadow: 0 0 red; }
-}
-/* @keyframes depth {
-  0% { text-shadow: 0 0 black; }
-  25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
-  50% { text-shadow: 0 0 black; }
-  75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
-  100% { text-shadow: 0 0 black; }
-} */
