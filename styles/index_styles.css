@@ -3,6 +3,8 @@
   src: url(../fonts/webfontkit-20190819-010749/slkscr-webfont.woff);
 }
 
+
+
 html {
   font-family: slkscr;
   background: url(../images/moonBack.gif) center center fixed;
@@ -13,7 +15,47 @@ html {
 
   font-smooth: never;
   -webkit-font-smoothing : none;
+
+
 }
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+  html {
+    background: #58B2DC;
+    -webkit-animation: nippon-background 2s infinite;
+  }
+  p {
+    -webkit-animation: nippon-rainbow 1s infinite;
+  }
+  #nameHeader {
+    -webkit-animation: nippon-rainbow 1s infinite;
+  }
+}
+
+@-webkit-keyframes nippon-background {
+  17%:{background: #58B2DC;} /* blue */
+	34%{background: #B481BB;} /* purple */
+	51%{background: #FB966E;} /* orange */
+  68%{background: #EB7A77;} /* red */
+	85%{background: #FBE251;} /* yellow */
+	100%{background: #5DAC81;} /* green */
+}
+
+@-webkit-keyframes nippon-rainbow {
+	17%{color: #EB7A77;}
+	34%{color: #FBE251;}
+	51%{color: #5DAC81;}
+  68%:{color: #58B2DC;}
+	85%{color: #B481BB;}
+	100%{color: #FB966E;}
+}
+
+/*
+@media screen and (min-width: 480px) {
+  html {
+    background: url(../images/moonBack.gif) center fixed;
+  }
+} */
 
 body {
 }
@@ -23,7 +65,8 @@ h1{
 }
 
 p {
-  -webkit-animation: rainbow 4s infinite;
+  -webkit-animation: nippon-rainbow 6s infinite;
+  color: #EB7A77;
 }
 
 h3 {
@@ -74,8 +117,8 @@ ul {
 
 #nameHeader {
   /* Chrome, Safari, Opera */
-  -webkit-animation: rainbow 4s infinite;
-
+  -webkit-animation: nippon-rainbow 6s infinite;
+  color: #EB7A77;
   /* url(../images/rainbow_banner.gif) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -109,6 +152,15 @@ ul {
 	60%{color: green;}
 	80%{color: blue;}
 	100%{color: orange;}
+}
+
+@-webkit-keyframes nippon-rainbow {
+	17%{color: #EB7A77;}
+	34%{color: #FBE251;}
+	51%{color: #5DAC81;}
+  68%:{color: #58B2DC;}
+	85%{color: #B481BB;}
+	100%{color: #FB966E;}
 }
 
 
