@@ -40,6 +40,10 @@ html {
     width: 40%;
     opacity: .8;
   }
+  .menu {
+    width: 50%;
+    font-size: large;
+  }
 }
 
 @-webkit-keyframes nippon-background {
