@@ -30,6 +30,16 @@ html {
   #nameHeader {
     -webkit-animation: nippon-rainbow 1s infinite;
   }
+  .centerP {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: large;
+  }
+  #face {
+    width: 40%;
+    opacity: .8;
+  }
 }
 
 @-webkit-keyframes nippon-background {
