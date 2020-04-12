@@ -1,0 +1,206 @@
+@font-face {
+  font-family: halo3;
+  src: url('../fonts/halo3/Halo3.ttf');
+}
+
+
+
+html {
+  font-family: halo3;
+  background: url(../images/moonBack.gif) center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  font-smooth: never;
+  -webkit-font-smoothing : none;
+
+
+}
+
+@media only screen and (max-device-width: 480px) {
+  html {
+    background: #58B2DC;
+    -webkit-animation: nippon-background 2s infinite;
+  }
+  p {
+    -webkit-animation: nippon-rainbow 1s infinite;
+  }
+  #nameHeader {
+    -webkit-animation: nippon-rainbow 1s infinite;
+  }
+  .centerP {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: large;
+  }
+  #face {
+    width: 40%;
+    opacity: .8;
+  }
+  .menu {
+    width: 50%;
+    font-size: large;
+  }
+}
+
+@-webkit-keyframes nippon-background {
+  17%:{background: #58B2DC;} /* blue */
+	34%{background: #B481BB;} /* purple */
+	51%{background: #FB966E;} /* orange */
+  68%{background: #EB7A77;} /* red */
+	85%{background: #FBE251;} /* yellow */
+	100%{background: #5DAC81;} /* green */
+}
+
+@-webkit-keyframes nippon-rainbow {
+	17%{color: #EB7A77;}
+	34%{color: #FBE251;}
+	51%{color: #5DAC81;}
+  68%:{color: #58B2DC;}
+	85%{color: #B481BB;}
+	100%{color: #FB966E;}
+}
+
+/*
+@media screen and (min-width: 480px) {
+  html {
+    background: url(../images/moonBack.gif) center fixed;
+  }
+} */
+
+body {
+}
+
+h1{
+  font-size: 300%;
+}
+
+p {
+  -webkit-animation: nippon-rainbow 6s infinite;
+  color: #EB7A77;
+}
+
+h3 {
+  /* padding-top: 0.5cm; */
+  padding-bottom: 0cm;
+}
+
+h5 {
+  /* padding-left: 0.5cm; */
+}
+
+ul {
+  padding-top: 0cm;
+}
+
+.center{
+  margin: auto;
+  text-align: center;
+}
+
+.centerP {
+  margin: auto;
+  width: 25%;
+  text-align: center;
+  font-size: medium;
+}
+
+.aboutList {
+  padding-left: 1cm;
+}
+
+.homeButton{
+  margin: auto;
+  text-align: center;
+}
+
+.nyan {
+  width: 10%;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+
+#header {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+#nameHeader {
+  /* Chrome, Safari, Opera */
+  -webkit-animation: nippon-rainbow 6s infinite;
+  color: #EB7A77;
+  /* url(../images/rainbow_banner.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  /* color: white;  /* Fallback: assume this color ON TOP of image */ */
+  /* background: url(../images/rainbow_banner.gif) no-repeat fixed; */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* font-size: +2; */
+  margin-left: 30px;
+  margin-right: 30px;
+  display: inline-block;
+}
+
+#face {
+  width: 17%;
+  opacity: .8;
+}
+
+#construction {
+  width: 5%;
+  opacity: .5;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}
+}
+
+@-webkit-keyframes nippon-rainbow {
+	17%{color: #EB7A77;}
+	34%{color: #FBE251;}
+	51%{color: #5DAC81;}
+  68%:{color: #58B2DC;}
+	85%{color: #B481BB;}
+	100%{color: #FB966E;}
+}
+
+
+#spinner {
+  text-align: center;
+  -webkit-animation: spin, depth;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  font-size: 50%;
+}
+@-webkit-keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(-360deg); }
+}
+@-webkit-keyframes depth {
+  0% { text-shadow: 0 0 red; }
+  25% { text-shadow: 1px 0 yellow, 2px 0 yellow, 3px 0 yellow, 4px 0 yellow, 5px 0 yellow; }
+  50% { text-shadow: 0 0 green; }
+  75% { text-shadow: -1px 0 blue, -2px 0 blue, -3px 0 blue, -4px 0 blue, -5px 0 blue; }
+  100% { text-shadow: 0 0 red; }
+}
+/* @keyframes depth {
+  0% { text-shadow: 0 0 black; }
+  25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+  50% { text-shadow: 0 0 black; }
+  75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+  100% { text-shadow: 0 0 black; }
+} */
